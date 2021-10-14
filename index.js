@@ -187,10 +187,10 @@ class Student extends Lambdasian{
      return this.favSubjects;
    }
    PRAssignment(subject){
-     return `${student.name} has submitted a PR for ${subject}`
+     return `${this.name} has submitted a PR for ${subject}`
    }
    sprintChallenge(subject){
-     return `${student.name} has begun sprint challenge on ${subject}`
+     return `${this.name} has begun sprint challenge on ${subject}`
    }
 }
 
@@ -220,6 +220,7 @@ class ProjectManager extends Instructor{
      return `${this.name} debugs ${student.name}'s code on ${subject}`
    }
 }
+
 /*
   STRETCH PROBLEM (no tests!)
     - Extend the functionality of the Student by adding a prop called grade and setting it equal to a number between 1-100.
